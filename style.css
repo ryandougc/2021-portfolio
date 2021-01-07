@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Verdana, sans-serif;
+    background-color: #fefefe;
+
+    --secondary-colour: #00498d;
+
+    --dark-text: rgb(26, 25, 25);
+}
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-text);
+    transition: 200ms;
+}
+
+a:hover {
+    color: var(--secondary-colour);
+    transition: 200ms;
+}
+
+b {
+    color: #000;
+}
+
+h2 {
+    font-family: Roboto Mono;
+    color: var(--secondary-colour);
+    font-size: 1em;
+}
+
+h2 a {
+    color: var(--secondary-colour);
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-right {
+    fill: var(--dark-text);
+    transform: scale(0.5);
+}
+
+/* Header */
+#header {
+    width: 100%;
+    padding: 20px 0 12px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+#header nav {
+    margin: 0 0 14px auto;
+}
+#header nav a {
+    font-size: 0.76em;
+    font-family: Roboto Mono;
+    padding: 0 6px 0 6px;
+}
+#bio > p {
+    margin-top: 20px;
+    line-height: 1.4em;
+}
+#portrait {
+    width: 100%;
+    display: block;
+}
+#portrait img {
+    width: 100%;
+}
+#location {
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    opacity: 0.4;
+    color: var(--secondary-colour);
+}
+#location #location-icon {
+    transform: scale(0.75);
+    fill: var(--secondary-colour);
+    padding-right: 4px;
+}
+
+
+
+#content {
+    max-width: 800px;
+    color: var(--dark-text);
+}
+
+
+/* Project */
+#projects {
+    margin-top: 60px;
+}
+#projects .title {
+    display: flex;
+    align-items: center;
+}
+#projects .title {
+    margin-top: 60px;
+}
+#projects #first-project-title {
+    margin-top: 22px;
+}
+#projects h3 {
+    display: inline;
+    margin-right: 4px;
+    font-weight: normal;
+    font-size: 1.25em;
+}
+#projects p {
+    margin-top: 6px;
+}
+#projects .skills {
+    margin-top: 24px;
+}
+#project .skills hF4{
+    color: var(--dark-text);
+}
+
+/* Footer */
+#footer {
+    margin-top: 60px;
+}
+#footer #contact #contact-container {
+    margin-top: 14px;
+}
+#footer a {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px 0;
+}
+#footer a p{
+    display: inline;
+}
+#footer #copyright {
+    margin-top: 40px;
+    padding-bottom: 4px;
+    color: var(--dark-text);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 576px) {
+    #header {
+        max-width: 1000px;
+        justify-content: space-between;
+    }
+    #header nav {
+        display: block;
+    }
+    #portrait {
+        width: 300px;
+    }
+
+    #bio > p {
+        width: 80%;
+    }
+
+
+    #content {
+        margin-top: 30px;
+    }
+
+    #projects .title {
+        margin-top: 45px;
+    }
+    #projects #project-container > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    #projects #project-container .desc {
+        width: 50%;
+    }
+    #projects #project-container .skills {
+        width: 40%;
+    }
+
+
+    #footer {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 80%;
+    }
+
+    #bio {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    #bio > p {
+        width: 50%;
+        margin-left: 35px;
+    }
+
+    #projects {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
