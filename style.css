@@ -72,13 +72,16 @@ svg {
     margin: 0 0 14px auto;
 }
 #header nav a {
-    font-size: 0.76em;
+    font-size: 0.79em;
     font-family: Roboto Mono;
     padding: 0 6px 0 6px;
 }
 #bio > p {
     margin-top: 20px;
     line-height: 1.4em;
+}
+#bio .blue {
+    color: var(--secondary-colour);
 }
 #portrait {
     width: 100%;
@@ -103,15 +106,13 @@ svg {
 
 
 #content {
+    margin-top: 60px;
     max-width: 800px;
     color: var(--dark-text);
 }
 
 
 /* Project */
-#projects {
-    margin-top: 60px;
-}
 #projects .title {
     display: flex;
     align-items: center;
@@ -160,6 +161,67 @@ svg {
     text-align: center;
 }
 
+
+/* Resume Page */
+#resume-content{
+    max-width: 800px;
+    color: var(--dark-text);
+}
+
+#resume-content *{
+    line-height: 1.5em;
+}
+
+#resume-content ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#resume-content ul li{
+    margin-bottom: 6px;
+}
+
+#resume-content ul li:before{
+    content: "- ";
+}
+
+#resume-content .entry {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    line-height: 1.3em;
+}
+
+#resume-content .title{
+    display: inline;
+}
+
+#resume-content .date {
+    display: inline;
+}
+
+#resume-content .description {
+    margin-top: 10px;
+}
+
+#resume-content .tech,
+#resume-content .lesson {
+    margin-top: 10px;
+}
+
+#resume-education,
+#resume-experience,
+#resume-projects {
+    margin-top: 60px;
+}
+
+#resume-footer #copyright {
+    padding-bottom: 4px;
+    color: var(--dark-text);
+    text-align: center;
+}
+
+
 /* Responsive Design */
 @media (min-width: 576px) {
     #header {
@@ -201,6 +263,11 @@ svg {
     #footer {
         margin-top: 80px;
     }
+
+    /* Resume Page */
+    #resume-content *{
+        line-height: 1.2em;
+    }    
 }
 
 @media (min-width: 768px) {
@@ -221,6 +288,11 @@ svg {
     #projects {
         margin-top: 80px;
     }
+
+    /* Resume Page */
+    #resume-content *{
+        line-height: 1.3em;
+    }    
 }
 
 @media (min-width: 992px) {
