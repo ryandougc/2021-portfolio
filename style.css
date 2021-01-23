@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
 * {
     margin: 0;
@@ -13,12 +13,13 @@
 }
 
 body {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 #container {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -76,72 +77,77 @@ svg {
     font-family: Roboto Mono;
     padding: 0 6px 0 6px;
 }
+
+#bio {
+    margin-top: 75px;
+}
 #bio > p {
-    margin-top: 20px;
     line-height: 1.4em;
+}
+#bio #greeting {
+    font-size: 2em;
+    font-weight: 300;
+
+}
+#bio #description {
+    margin-top: 45px;
+
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 #bio .blue {
     color: var(--secondary-colour);
-}
-#portrait {
-    width: 100%;
-    display: block;
-}
-#portrait img {
-    width: 100%;
-}
-#location {
-    display: flex;
-    align-items: center;
-    font-size: 0.95em;
-    opacity: 0.4;
-    color: var(--secondary-colour);
-}
-#location #location-icon {
-    transform: scale(0.75);
-    fill: var(--secondary-colour);
-    padding-right: 4px;
 }
 
 
 
 #content {
-    margin-top: 60px;
+    margin-top: 80px;
     max-width: 800px;
     color: var(--dark-text);
 }
 
 
 /* Project */
-#projects .title {
+#projects #project-container {
+    margin-top: 30px;
+}
+#projects #project-container > div {
+    margin-bottom: 60px;
+}
+#projects #project-container > div .desc .title {
     display: flex;
     align-items: center;
+
+    font-size: 1.3em;
 }
-#projects .title {
-    margin-top: 60px;
-}
-#projects #first-project-title {
-    margin-top: 22px;
-}
-#projects h3 {
+#projects #project-container > div .desc .title h3 {
     display: inline;
     margin-right: 4px;
     font-weight: normal;
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
-#projects p {
-    margin-top: 6px;
+#projects #project-container > div .desc p {
+    margin-top: 8px;
+    font-size: 1.2em;
+    font-weight: 300;
 }
-#projects .skills {
-    margin-top: 24px;
+#projects #project-container > div .skills {
+    margin-top: 30px;
+    font-size: 1.2em;
 }
-#project .skills hF4{
-    color: var(--dark-text);
+#projects #project-container > div .skills .skills-header{
+    font-weight: 400;
+}
+#projects #project-container > div .skills p {
+    font-weight: 300;
+    margin-top: 4px;
 }
 
 /* Footer */
 #footer {
-    margin-top: 60px;
+    margin-top: 110px;
 }
 #footer #contact #contact-container {
     margin-top: 14px;
@@ -149,13 +155,15 @@ svg {
 #footer a {
     display: flex;
     align-items: center;
-    padding: 8px 0 8px 0;
+    padding: 16px 0 16px 0;
 }
 #footer a p{
     display: inline;
+    font-size: 1.2em;
 }
 #footer #copyright {
-    margin-top: 40px;
+    font-family: Roboto Mono;
+    margin-top: 60px;
     padding-bottom: 4px;
     color: var(--dark-text);
     text-align: center;
@@ -224,29 +232,49 @@ svg {
 
 /* Responsive Design */
 @media (min-width: 576px) {
+    #container {
+        width: 80%;
+    }
     #header {
-        max-width: 1000px;
+
         justify-content: space-between;
     }
     #header nav {
         display: block;
     }
-    #portrait {
-        width: 300px;
+
+    #projects #project-container {
+        margin-bottom: 110px;
     }
 
+    #footer {
+        margin-top: 80px;
+    }
+
+    /* Resume Page */
+    #resume-content *{
+        line-height: 1.2em;
+    }
+}
+
+@media (min-width: 768px) {
     #bio > p {
         width: 80%;
     }
-
 
     #content {
         margin-top: 30px;
     }
 
-    #projects .title {
-        margin-top: 45px;
+    #projects {
+        margin-top: 80px;
     }
+
+    /* Resume Page */
+    #resume-content *{
+        line-height: 1.3em;
+    }
+
     #projects #project-container > div{
         display: flex;
         justify-content: space-between;
@@ -258,53 +286,10 @@ svg {
     #projects #project-container .skills {
         width: 40%;
     }
-
-
-    #footer {
-        margin-top: 80px;
-    }
-
-    /* Resume Page */
-    #resume-content *{
-        line-height: 1.2em;
-    }    
-}
-
-@media (min-width: 768px) {
-    body {
-        width: 80%;
-    }
-
-    #bio {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: row;
-    }
-    #bio > p {
-        width: 50%;
-        margin-left: 35px;
-    }
-
-    #projects {
-        margin-top: 80px;
-    }
-
-    /* Resume Page */
-    #resume-content *{
-        line-height: 1.3em;
-    }    
 }
 
 @media (min-width: 992px) {
     body {
         max-width: 1000px;
     }
-}
-
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1400px) {
-
 }

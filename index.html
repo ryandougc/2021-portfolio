@@ -14,13 +14,9 @@
 
         <div id="header">
             <div id="bio">
+                <p id="greeting">Oh hey!</p>
 
-                <div id="portrait">
-                    <img src="/assets/images/portrait.jpg" alt="Portrait of Ryan Carr">
-                </div>
-
-                <p>I’m <b class="blue">Ryan</b> - a fullstack web developer from Vancouver BC, currently honing my skills with JavaScript. I enjoy seeing projects through from design to deployment. Creating a working prototype is always my first goal, giving me a baseline to iterate and improve on over time.</p>
-
+                <p id="description">I’m <b class="blue">Ryan</b> - a fullstack developer based in Metro Vancouver BC. I enjoy solving problems by building solutions with software and giving them a face to interact with in your browser.</p>
             </div>
 
             <nav>
@@ -37,15 +33,15 @@
                 <div id="project-container">
                     <div id="k9ds">
                         <div class="desc">
-                            <a href="https://k9detectionsports.ca" class="title" id="first-project-title">
+                            <a href="https://k9detectionsports.ca" class="title">
                                 <h3>K9DetectionSports.ca</h3>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
                             </a>
-                            <p>Web app solution creating a hub for registration and student management for a local dog trainer’s classes business</p>
+                            <p>Web app solution creating a hub for registration and student management for a local dog trainer’s classes</p>
                         </div>
 
                         <div class="skills">
-                            <h4>Skills Used</h4>
+                            <h4 class="skills-header">Skills Used</h4>
                             <p>Node Js, Express REST API, Nginx, Git, Authentication, Bootstrap 4, jQuery</p>
                         </div>
                     </div>
@@ -56,11 +52,11 @@
                                 <h3>Discord Voice Search</h3>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
                             </a>
-                            <p>Work-in-progress open source discord bot that will one day allow people to search the web with their voice while in a group call</p>
+                            <p>Work-in-progress open source discord bot that will one day allow people to search the web with their voice while in a voice chat</p>
                         </div>
 
                         <div class="skills">
-                            <h4>Skills Used</h4>
+                            <h4 class="skills-header">Skills Used</h4>
                             <p>Node Js, Github, Text-to-Speech Libraries, Voice-to-text Libraries</p>
                         </div>
                     </div>
@@ -75,23 +71,38 @@
                         </div>
 
                         <div class="skills">
-                            <h4>Skills Used</h4>
-                            <p>JS Dom, Web Sockets, CSS3, Node Js</p>
+                            <h4 class="skills-header">Skills Used</h4>
+                            <p>JavaScript, Web Sockets, CSS3, Node Js</p>
                         </div>
                     </div>
 
-                    <div id="product-table">
+                    <div id="stocking-stuffers">
                         <div class="desc">
-                            <a href="https://github.com/ryandougc/js-sortable-table" class="title">
-                                <h3>Product List Table</h3>
+                            <a href="https://github.com/ryandougc/vue-stocking-stuffers" class="title">
+                                <h3>Stocking Stuffers</h3>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
                             </a>
-                            <p>A way to keep track of the items I am selling on Facebook Marketplace.</p>
+                            <p>A idea list of items to put in stockings for Christmas.</p>
                         </div>
 
                         <div class="skills">
-                            <h4>Skills Used</h4>
-                            <p>Vue Js, PostgreSQL, Search and Sort Algorithms</p>
+                            <h4 class="skills-header">Skills Used</h4>
+                            <p>Vue Js, TypeScript, MongoDb, Docker</p>
+                        </div>
+                    </div>
+
+                    <div id="js-table-filter">
+                        <div class="desc">
+                            <a href="https://github.com/ryandougc/js-sortable-table" class="title">
+                                <h3>JS Table Filter Plugin</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
+                            </a>
+                            <p>A vanilla JavaScript plugin to bring search, sort, and pagination to table data</p>
+                        </div>
+
+                        <div class="skills">
+                            <h4 class="skills-header">Skills Used</h4>
+                            <p>JavaScript, CSS3, Search and Sort algorithms</p>
                         </div>
                     </div>
 
@@ -104,32 +115,33 @@
                     <h2>CONTACT</h2>
 
                     <div id="contact-container">
+                        <a href="mailto:hello@ryancarr.ca">
+                            <p>Shoot me an email</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
+                        </a>
+
                         <a href="https://github.com/ryandougc">
-                            <p>See More Projects on Github</p>
+                            <p>More projects on Github</p>
                             <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
                         </a>
 
                         <a href="https://www.linkedin.com/in/ryan-d-carr/">
-                            <p>LinkedIn</p>
+                            <p>Say hi on LinkedIn</p>
                             <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
                         </a>
 
                         <a href="https://twitter.com/ryan_thecoder">
-                            <p>Twitter</p>
+                            <p>Stalk me on Twitter</p>
                             <svg xmlns="http://www.w3.org/2000/svg" class="arrow-right"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg>
                         </a>
                     </div>
                 </div>
 
-                <p id="copyright">© 2021 RyanCarr. All Rights Reserved.</p>
+                <p id="copyright">2021 DESIGNED BY RYAN CARR</p>
             </div>
 
         </div>
 
     </div>
 </body>
-
-<script>
-    // Defer Image Loading
-</script>
 </html>
