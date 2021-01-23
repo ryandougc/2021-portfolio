@@ -269,6 +269,12 @@ svg {
     #projects {
         margin-top: 80px;
     }
+    #projects #project-container > div .desc .title {
+        display: flex;
+        align-items: center;
+
+        font-size: 1.2em;
+    }
 
     /* Resume Page */
     #resume-content *{
